@@ -6,7 +6,7 @@ The project requirements can be found [here](https://cs50.harvard.edu/web/2020/p
 
 The index page is a close replica of Google's main search page
 
-![alt-text](assets/screenshots/index.jpg "Google Search")
+![alt-text](assets/screenshots/index.JPG "Google Search")
 
 The search and "I'm Feeling Lucky" buttons replicate Google's own behaviour where the latter takes the user directly to the first Google search result.
 The navigation located at the top right contains links to a simplified Google Advanced Search page and a Google Image Search Page.
