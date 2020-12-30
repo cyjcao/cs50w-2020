@@ -6,11 +6,11 @@ The project requirements can be found [here](https://cs50.harvard.edu/web/2020/p
 
 To run this project on your local machine, first clone this repository into your machine.
 <br/>
-1. Install Django if you haven't:
+1. Install Django and [python-markdown2](https://github.com/trentm/python-markdown2):
 ```console
-foo@my-machine:~$ pip install django
+foo@my-machine:~$ pip install django markdown2
 ```
-2. Change to project1 directory and start the django development server:
+2. Change to project1 directory and start the Django development server:
 ```console
 foo@my-machine:~/cs50w-2020$ cd project1/
 foo@my-machine:~/cs50w-2020/project1$ python manage.py runserver
