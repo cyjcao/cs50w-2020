@@ -5,3 +5,7 @@ The projects for HarvardX CS50W: Web Programming with Python and JavaScript cour
 ### [Project 0: Search](project0/README.md)
 
 Create Front-end for Google Search using **HTML** and **CSS**
+
+### [Project 1: Wiki](project1/README.md)
+
+Create a simple online Wikipedia-like encyclopedia using **Django**
