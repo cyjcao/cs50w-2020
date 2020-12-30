@@ -4,6 +4,12 @@
     {{ title }}
 {% endblock %}
 
+{% block nav %}
+    <div>
+        <a href="{{ request.path }}/edit">Edit Page</a>
+    </div>
+{% endblock %}
+
 {% block body %}
     {{ contents|safe }}
 {% endblock %}
