@@ -70,6 +70,7 @@ def register(request):
         return render(request, "auctions/register.html")
 
 def listing(request, listing_id):
+    # Ensure listing exists
     try:
         listing = Listing.objects.get(pk=listing_id)
         bids = listing.bids.order_by('-amount', '-id')
@@ -82,8 +83,10 @@ def listing(request, listing_id):
     comments = Comment.objects.filter(listing=listing)
     success_message = ""
 
+    # Perform different actions depending on which button was clicked
     if request.method == "POST" and 'submit-bid' in request.POST:
         pending_bid = float(request.POST['bid'])
+        # Ensure bid is higher than current price
         if pending_bid > bids.first().amount or (bids.first().bidder is None and pending_bid == bids.first().amount):
             bid = Bid(bidder=request.user, listing=listing, amount=pending_bid)
             bid.save()
