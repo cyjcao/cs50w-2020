@@ -13,3 +13,7 @@ Create a simple online Wikipedia-like encyclopedia using **Django**
 ### [Project 2: Commerce](project2/)
 
 Create an eBay-like e-commerce auction site using **Django**
+
+### [Project 3: Mail](project3/)
+
+Create a Front-end for an email client using **JavaScript**
